@@ -3,7 +3,7 @@ const contentful = require("contentful");
 const client = contentful.createClient({
 	space: "651dpynyx4bt",
 	environment: "master",
-	accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
+	accessToken: "aMDd0h_eopxu33mCbUFzzC2WcLg9JKX9ZbzswND_5gc"
 });
 
 export async function getEntries() {
