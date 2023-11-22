@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Post({ post }) {
 	console.log(post);
@@ -9,11 +10,15 @@ export default function Post({ post }) {
 		day: "numeric"
 	});
 
+	console.log(post.fields.header.fields.file.url);
+
 	return (
-		<div className="mt-4 p-2 bg-slate-800 text-slate-100 rounded-xl">
+		<div className="mb-4 p-2 bg-slate-800 text-slate-100 rounded-xl">
 			<Link href={`/blog/post?id=${post.sys.id}`}>
-				<img
-					src={post.fields.header.fields.file.url}
+				<Image
+					width={600}
+					height={400}
+					src={`https:${post.fields.header.fields.file.url}`}
 					alt={post.fields.header.fields.title}
 					className="rounded-lg mb-2"
 				/>

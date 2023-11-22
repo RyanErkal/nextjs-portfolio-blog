@@ -2,6 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { getEntry } from "../../api/contentful";
 import Markdown from "react-markdown";
 import Nav from "../components/Nav";
@@ -26,10 +27,11 @@ export default function Page() {
 			<Nav />
 			{post ? (
 				<div className="p-4 pb-8 text-slate-100 relative">
-					<h1 className="text-2xl font-bold">{post.fields.title}</h1>
-					<img
-						className="w-full rounded-lg my-4"
-						src={post.fields.header.fields.file.url}
+					<Image
+						width={600}
+						height={400}
+						className="w-full rounded-lg mb-4"
+						src={`https:${post.fields.header.fields.file.url}`}
 						alt={post.fields.header.fields.title}
 					/>
 					<Markdown className="prose prose-slate prose-invert mb-4">
