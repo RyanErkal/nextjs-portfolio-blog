@@ -19,15 +19,17 @@ export default function Blog() {
 	return (
 		<div className="bg-slate-800 min-h-screen h-full w-screen overflow-hidden flex flex-col justify-between">
 			<Nav />
-			<div className="p-2 pb-8 relative">
-				{!posts ? (
-					<div className="h-screen">Loading...</div>
-				) : (
-					posts.map((post) => {
-						return <Post key={post.sys.id} post={post} />;
-					})
-				)}
-				<ToTop />
+			<div className="flex flex-col items-center">
+				<div className="p-2 pb-8 relative grid grid-cols-1 lg:grid-cols-2 lg:gap-8">
+					{!posts ? (
+						<div className="h-screen">Loading...</div>
+					) : (
+						posts.map((post) => {
+							return <Post key={post.sys.id} post={post} />;
+						})
+					)}
+					<ToTop />
+				</div>
 			</div>
 			<Footer />
 		</div>

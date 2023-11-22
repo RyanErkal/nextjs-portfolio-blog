@@ -83,8 +83,8 @@ export default function Projects() {
 						]}
 						github="/"
 						live="/">
-						Time tracking / Productivity app with user
-						authentication [In Progress]
+						Time tracking & Productivity app with user
+						authentication and data visualization, work in progress
 					</Project>
 				</div>
 			</motion.div>

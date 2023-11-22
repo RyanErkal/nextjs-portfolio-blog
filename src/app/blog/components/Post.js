@@ -13,17 +13,21 @@ export default function Post({ post }) {
 	console.log(post.fields.header.fields.file.url);
 
 	return (
-		<div className="mb-4 p-2 bg-slate-800 text-slate-100 rounded-xl">
-			<Link href={`/blog/post?id=${post.sys.id}`}>
+		<div className="mb-4 p-2 bg-slate-800 text-slate-100 rounded-xl max-w-md">
+			<Link
+				href={`/blog/post?id=${post.sys.id}`}
+				className="flex flex-col items-center">
 				<Image
-					width={600}
+					width={900}
 					height={400}
 					src={`https:${post.fields.header.fields.file.url}`}
 					alt={post.fields.header.fields.title}
 					className="rounded-lg mb-2"
 				/>
-				<h1 className="text-xl font-bold">{post.fields.title}</h1>
-				<p className="text-sm text-slate-200">{dateString}</p>
+				<div>
+					<h1 className="text-xl font-bold">{post.fields.title}</h1>
+					<p className="text-sm text-slate-200">{dateString}</p>
+				</div>
 			</Link>
 		</div>
 	);

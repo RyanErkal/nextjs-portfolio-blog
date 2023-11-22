@@ -26,7 +26,7 @@ export default function Page() {
 		<div className="bg-slate-800 min-h-screen max-w-screen overflow-hidden">
 			<Nav />
 			{post ? (
-				<div className="p-4 pb-8 text-slate-100 relative">
+				<div className="p-4 pb-8 text-slate-100 relative flex flex-col">
 					<Image
 						width={600}
 						height={400}
