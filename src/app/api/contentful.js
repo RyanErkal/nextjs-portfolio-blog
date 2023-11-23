@@ -1,5 +1,3 @@
-"use client";
-
 const contentful = require("contentful");
 
 const client = contentful.createClient({
