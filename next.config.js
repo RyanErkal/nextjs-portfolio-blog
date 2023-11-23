@@ -12,9 +12,8 @@ const nextConfig = {
 		]
 	},
 	env: {
-		NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN:
-			process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
-		NEXT_PUBLIC_SPACE_ID: process.env.NEXT_PUBLIC_SPACE_ID
+		CONTENTFUL_ACCESS_TOKEN: process.env.CONTENTFUL_ACCESS_TOKEN,
+		SPACE_ID: process.env.SPACE_ID
 	}
 };
 
