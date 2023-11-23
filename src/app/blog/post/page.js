@@ -26,17 +26,19 @@ export default function Page() {
 		<div className="bg-slate-800 min-h-screen max-w-screen overflow-hidden">
 			<Nav />
 			{post ? (
-				<div className="p-4 pb-8 text-slate-100 relative flex flex-col">
-					<Image
-						width={600}
-						height={400}
-						className="w-full rounded-lg mb-4"
-						src={`https:${post.fields.header.fields.file.url}`}
-						alt={post.fields.header.fields.title}
-					/>
-					<Markdown className="prose prose-slate prose-invert mb-4">
-						{body}
-					</Markdown>
+				<div className="p-4 pb-8 text-slate-100 relative flex flex-col items-center justify-center">
+					<div className="max-w-2xl">
+						<Image
+							width={600}
+							height={400}
+							className="w-full rounded-lg mb-4"
+							src={`https:${post.fields.header.fields.file.url}`}
+							alt={post.fields.header.fields.title}
+						/>
+						<Markdown className="prose prose-slate prose-invert mb-4">
+							{body}
+						</Markdown>
+					</div>
 					<ToTop />
 				</div>
 			) : (
