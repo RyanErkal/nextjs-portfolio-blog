@@ -3,7 +3,7 @@
 const contentful = require("contentful");
 
 const client = contentful.createClient({
-	space: "651dpynyx4bt",
+	space: process.env.NEXT_PUBLIC_SPACE_ID,
 	environment: "master",
 	accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
 });
