@@ -1,9 +1,9 @@
 const contentful = require("contentful");
 
 const client = contentful.createClient({
-	space: process.env.NEXT_PUBLIC_SPACE_ID,
+	space: process.env.SPACE_ID,
 	environment: "master",
-	accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
+	accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
 });
 
 export async function getEntries() {
