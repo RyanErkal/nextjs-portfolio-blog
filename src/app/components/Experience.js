@@ -19,7 +19,7 @@ const GradientTitle = styled.h1`
 export default function About() {
 	return (
 		<div
-			id="about"
+			id="experience"
 			className="h-screen p-4 bg-slate-800 text-slate-100 flex justify-center items-center text-center">
 			<motion.div
 				className="text-xl w-full flex flex-col justify-center items-center text-center"
