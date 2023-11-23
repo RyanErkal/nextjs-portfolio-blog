@@ -17,7 +17,7 @@ export default function Nav() {
 		<nav
 			id="nav"
 			className="flex flex-row justify-between p-4 text-gray-100 bg-slate-900 font-medium text-lg">
-			<h1 className="text-xl font-bold text-orange-400">
+			<h1 className="text-xl font-bold text-purple-400">
 				<Link href="/blog">Blog</Link>
 			</h1>
 			<div
@@ -34,7 +34,7 @@ export default function Nav() {
 
 			{/* desktop nav */}
 			<ul className="hidden sm:flex flex-row justify-center items-center text-center">
-				<li className="mr-4 hover:text-orange-400 transition-all ease-in-out">
+				<li className="mr-4 hover:text-purple-400 transition-all ease-in-out">
 					<Link href="./">Portfolio</Link>
 				</li>
 			</ul>
