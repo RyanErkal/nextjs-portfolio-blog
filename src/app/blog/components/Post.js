@@ -2,8 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Post({ post }) {
-	console.log(post);
-
 	let dateString = new Date(post.fields.date).toLocaleDateString("en-UK", {
 		year: "numeric",
 		month: "short",
