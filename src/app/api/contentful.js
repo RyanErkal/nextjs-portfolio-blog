@@ -1,9 +1,11 @@
+"use client";
+
 const contentful = require("contentful");
 
 const client = contentful.createClient({
 	space: "651dpynyx4bt",
 	environment: "master",
-	accessToken: "aMDd0h_eopxu33mCbUFzzC2WcLg9JKX9ZbzswND_5gc"
+	accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
 });
 
 export async function getEntries() {

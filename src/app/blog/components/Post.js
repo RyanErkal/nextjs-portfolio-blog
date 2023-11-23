@@ -13,7 +13,7 @@ export default function Post({ post }) {
 	console.log(post.fields.header.fields.file.url);
 
 	return (
-		<div className="mb-4 p-2 bg-slate-800 text-slate-100 rounded-xl max-w-md">
+		<div className="mb-4 p-2 bg-slate-800 text-slate-100 rounded-xl max-w-sm">
 			<Link
 				href={`/blog/post?id=${post.sys.id}`}
 				className="flex flex-col items-center">

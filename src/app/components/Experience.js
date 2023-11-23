@@ -37,7 +37,7 @@ export default function About() {
 				}}>
 				<div className="w-full sm:w-4/6 lg:max-w-2xl">
 					<GradientTitle>Experience</GradientTitle>
-					<p className="text-xs xl:text-sm">
+					<div className="text-xs xl:text-sm">
 						<h3 className="text-lg font-bold mb-2 ">
 							Freelance Web Developer 2019 - Present
 						</h3>
@@ -85,7 +85,7 @@ export default function About() {
 								sprint planning.
 							</li>
 						</ul>
-					</p>
+					</div>
 				</div>
 			</motion.div>
 		</div>
