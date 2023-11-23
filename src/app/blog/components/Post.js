@@ -20,7 +20,7 @@ export default function Post({ post }) {
 					alt={post.fields.header.fields.title}
 					className="rounded-lg mb-2"
 				/>
-				<div>
+				<div className="w-full">
 					<h1 className="text-xl font-bold">{post.fields.title}</h1>
 					<p className="text-sm text-slate-200">{dateString}</p>
 				</div>
