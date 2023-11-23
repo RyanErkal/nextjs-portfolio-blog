@@ -10,8 +10,6 @@ export default function Post({ post }) {
 		day: "numeric"
 	});
 
-	console.log(post.fields.header.fields.file.url);
-
 	return (
 		<div className="mb-4 p-2 bg-slate-800 text-slate-100 rounded-xl max-w-sm">
 			<Link
@@ -32,9 +30,3 @@ export default function Post({ post }) {
 		</div>
 	);
 }
-
-/* {
-    "tags" : [
-        "freelance", "web dev"
-    ]
-} */
