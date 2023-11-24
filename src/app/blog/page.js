@@ -1,20 +1,48 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getEntries } from "../api/contentful";
+import { contentfulApiGQL } from "../api/contentful";
 import Nav from "./components/Nav";
-import ToTop from "../components/ToTop";
-import Footer from "../components/Footer";
 import Post from "./components/Post";
+import Footer from "../components/Footer";
 
 export default function Blog() {
 	const [posts, setPosts] = useState();
+	const [load, setLoad] = useState(10);
 
 	useEffect(() => {
-		getEntries().then((response) => {
+		/* getEntries().then((response) => {
 			setPosts(response);
+		}); */
+		contentfulApiGQL(`{
+			blogPostCollection(limit: ${load}, skip: 0, order: date_DESC){
+				total
+				items {
+				  sys {
+					id
+				  }
+				  date
+				  title
+				  header {
+					title
+					description
+					contentType
+					fileName
+					size
+					url
+					width
+					height
+				  }
+				}
+			}
+		  }`)().then((response) => {
+			setPosts(response.data.blogPostCollection.items);
 		});
-	}, []);
+	}, [load]);
+
+	const handleLoadMore = () => {
+		setLoad(load + 10);
+	};
 
 	return (
 		<div className="bg-slate-800 min-h-screen h-full w-screen overflow-hidden flex flex-col justify-between">
@@ -28,8 +56,14 @@ export default function Blog() {
 							return <Post key={post.sys.id} post={post} />;
 						})
 					)}
-					<ToTop />
 				</div>
+			</div>
+			<div className="flex justify-center relative">
+				<button
+					className="bg-slate-700 text-white px-4 py-2 mb-8 rounded-xl hover:bg-slate-600 transition-all"
+					onClick={handleLoadMore}>
+					Load More
+				</button>
 			</div>
 			<Footer />
 		</div>

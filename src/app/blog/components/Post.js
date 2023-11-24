@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Post({ post }) {
-	let dateString = new Date(post.fields.date).toLocaleDateString("en-UK", {
+	let dateString = new Date(post.date).toLocaleDateString("en-UK", {
 		year: "numeric",
 		month: "short",
 		day: "numeric"
@@ -16,12 +16,12 @@ export default function Post({ post }) {
 				<Image
 					width={900}
 					height={400}
-					src={`https:${post.fields.header.fields.file.url}`}
-					alt={post.fields.header.fields.title}
+					src={post.header.url}
+					alt={post.title}
 					className="rounded-lg mb-2"
 				/>
 				<div className="w-full">
-					<h1 className="text-xl font-bold">{post.fields.title}</h1>
+					<h1 className="text-xl font-bold">{post.title}</h1>
 					<p className="text-sm text-slate-200">{dateString}</p>
 				</div>
 			</Link>
