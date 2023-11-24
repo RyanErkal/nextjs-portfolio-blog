@@ -35,12 +35,12 @@ export async function getEntry(id) {
 }
 
 export function contentfulApiGQL(query) {
-	const fetchUrl = `https://graphql.contentful.com/content/v1/spaces/${process.env.NEXT_PUBLIC_SPACE_ID}`;
+	const fetchUrl = `https://graphql.contentful.com/content/v1/spaces/651dpynyx4bt`;
 
 	const fetchOptions = {
 		method: "POST",
 		headers: {
-			Authorization: `Bearer ${process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN}`,
+			Authorization: `Bearer aMDd0h_eopxu33mCbUFzzC2WcLg9JKX9ZbzswND_5gc`,
 			"Content-Type": "application/json"
 		},
 		body: JSON.stringify({ query })
