@@ -63,11 +63,13 @@ export default function Blog() {
 				</div>
 			</div>
 			<div className="flex justify-center relative">
-				<button
-					className="bg-slate-700 text-white px-4 py-2 mx-8 mb-4 w-full lg:w-fit rounded-xl hover:bg-slate-600 transition-all"
-					onClick={handleLoadMore}>
-					Load More
-				</button>
+				{load < total.current && (
+					<button
+						className="bg-slate-700 text-white px-4 py-2 mx-8 mb-4 w-full lg:w-fit rounded-xl hover:bg-slate-600 transition-all"
+						onClick={handleLoadMore}>
+						Load More
+					</button>
+				)}
 			</div>
 			<Footer />
 		</div>
