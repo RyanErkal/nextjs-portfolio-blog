@@ -13,10 +13,10 @@ export default function Project({
 }) {
 	return (
 		<motion.div
-			className="p-2 pb-4 bg-slate-100 text-slate-900 rounded-xl flex flex-col items-center"
+			className="p-2 pb-4 bg-slate-100 text-slate-900 rounded-xl flex flex-col items-center w-full"
 			whileHover={{ scale: 1.05 }}
 			transition={{ type: "spring", dampening: 15, stiffness: 100 }}>
-			<div className="flex items-start justify-center bg-red-500 rounded-lg w-full mb-2">
+			<div className="flex items-start justify-center rounded-lg w-full mb-2">
 				<Image
 					src={images[0].url}
 					alt={title}

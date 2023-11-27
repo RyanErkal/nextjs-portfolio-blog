@@ -58,9 +58,9 @@ export default function Projects() {
 	return (
 		<div
 			id="projects"
-			className="h-content min-h-screen p-4 bg-slate-800 flex flex-col justify-center items-center text-center ">
+			className="h-content min-h-screen p-4 bg-slate-800 flex flex-col justify-center items-center text-center w-full">
 			<motion.div
-				className="w-5/6 sm:w-4/6 max-w-2xl"
+				className="w-full sm:w-4/6 max-w-2xl"
 				initial="hidden"
 				whileInView="visible"
 				viewport={{ once: true }}

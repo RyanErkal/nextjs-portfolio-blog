@@ -39,7 +39,7 @@ export default function Name() {
 
 	return (
 		<>
-			<div className="h-full min-h-screen p-6 bg-slate-800 flex justify-center items-center text-center">
+			<div className="h-full min-h-screen p-6 bg-slate-800 text-slate-100 flex justify-center items-center text-center">
 				<motion.div
 					initial="hidden"
 					whileInView="visible"
