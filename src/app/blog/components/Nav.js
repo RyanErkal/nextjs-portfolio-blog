@@ -55,9 +55,11 @@ export default function Nav() {
 						<path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
 					</svg>
 				)}
-				<Link href="./" className="text-2xl" onClick={showNav}>
-					Portfolio
-				</Link>
+				<div className="h-4/5 flex flex-col justify-start items-center">
+					<Link href="./" className="text-2xl" onClick={showNav}>
+						Portfolio
+					</Link>
+				</div>
 			</div>
 		</nav>
 	);
