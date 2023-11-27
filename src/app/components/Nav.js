@@ -54,7 +54,7 @@ export default function Nav({ blog }) {
 
 			{/* mobile nav */}
 			<div
-				className={`h-[100vh] fixed top-[0px] flex flex-col justify-around items-center w-full md:hidden bg-slate-900 z-40 duration-300 ${
+				className={`h-[100vh] fixed top-[0px] w-full md:hidden bg-slate-900 z-40 duration-300 ${
 					nav ? "right-[0px]" : "right-[-100vw]"
 				} `}>
 				{nav && (
@@ -68,39 +68,41 @@ export default function Nav({ blog }) {
 						<path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
 					</svg>
 				)}
-				<AnchorLink
-					href="#about"
-					className="text-2xl"
-					onClick={showNav}>
-					About
-				</AnchorLink>
-				<AnchorLink
-					href="#skills"
-					className="text-2xl"
-					onClick={showNav}>
-					Skills
-				</AnchorLink>
-				<AnchorLink
-					href="#experience"
-					className="text-2xl"
-					onClick={showNav}>
-					Experience
-				</AnchorLink>
-				<AnchorLink
-					href="#projects"
-					className="text-2xl"
-					onClick={showNav}>
-					Projects
-				</AnchorLink>
-				<Link href="/blog" className="text-2xl" onClick={showNav}>
-					Blog
-				</Link>
-				<AnchorLink
-					href="#contact"
-					className="text-2xl"
-					onClick={showNav}>
-					Contact
-				</AnchorLink>
+				<div className="h-4/5 flex flex-col justify-around items-center">
+					<AnchorLink
+						href="#about"
+						className="text-2xl"
+						onClick={showNav}>
+						About
+					</AnchorLink>
+					<AnchorLink
+						href="#skills"
+						className="text-2xl"
+						onClick={showNav}>
+						Skills
+					</AnchorLink>
+					<AnchorLink
+						href="#experience"
+						className="text-2xl"
+						onClick={showNav}>
+						Experience
+					</AnchorLink>
+					<AnchorLink
+						href="#projects"
+						className="text-2xl"
+						onClick={showNav}>
+						Projects
+					</AnchorLink>
+					<Link href="/blog" className="text-2xl" onClick={showNav}>
+						Blog
+					</Link>
+					<AnchorLink
+						href="#contact"
+						className="text-2xl"
+						onClick={showNav}>
+						Contact
+					</AnchorLink>
+				</div>
 			</div>
 		</nav>
 	);
