@@ -1,13 +1,39 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
-export default function Project({ title, tech, github, live, children }) {
+export default function Project({
+	title,
+	tech,
+	github,
+	live,
+	children,
+	images
+}) {
 	return (
 		<motion.div
-			className="p-6 bg-slate-100 text-slate-900 rounded-xl"
+			className="p-2 pb-4 bg-slate-100 text-slate-900 rounded-xl flex flex-col items-center"
 			whileHover={{ scale: 1.05 }}
 			transition={{ type: "spring", dampening: 15, stiffness: 100 }}>
+			<div className="flex items-start justify-center bg-red-500 rounded-lg w-full mb-2">
+				<Image
+					src={images[0].url}
+					alt={title}
+					key={title}
+					width={400}
+					height={300}
+					className="rounded-lg w-full lg:rounded-none lg:rounded-l-lg"
+				/>
+				<Image
+					src={images[1].url}
+					alt={title}
+					key={title}
+					width={400}
+					height={300}
+					className="rounded-r-lg w-full hidden xl:block"
+				/>
+			</div>
 			<h3 className="text-xl font-bold mb-2">{title}</h3>
 			<p className="text-sm">{children}</p>
 			<div className="flex flex-wrap items-center justify-center mt-2">
