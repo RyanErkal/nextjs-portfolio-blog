@@ -37,7 +37,7 @@ export default function About() {
 				}}>
 				<div className="w-full sm:w-4/6 lg:max-w-2xl">
 					<GradientTitle>About</GradientTitle>
-					<p className="text-xs xl:text-sm text-slate-100">
+					<p className="text-xs text-slate-100">
 						Disciplined Freelance Web Developer with a strong
 						foundation in{" "}
 						<span className="text-purple-400 font-bold">
