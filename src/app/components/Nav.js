@@ -16,7 +16,7 @@ export default function Nav({ blog }) {
 	return (
 		<nav
 			id="nav"
-			className="flex flex-row justify-between p-4 text-gray-100 bg-slate-900 font-medium text-lg">
+			className="flex flex-row justify-between p-4 text-gray-100 bg-slate-900 font-medium">
 			<h1 className="text-xl font-bold text-purple-400">Portfolio</h1>
 			<div
 				className="flex items-center justify-center sm:hidden fill-current"
@@ -31,7 +31,7 @@ export default function Nav({ blog }) {
 			</div>
 
 			{/* desktop nav */}
-			<ul className="hidden sm:flex flex-row justify-center items-center text-center">
+			<ul className="hidden sm:flex flex-row justify-center items-center text-center text-sm">
 				<li className="mr-4 hover:text-purple-400 transition-all ease-in-out">
 					<AnchorLink href="#about">About</AnchorLink>
 				</li>

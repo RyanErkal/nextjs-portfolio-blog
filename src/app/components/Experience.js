@@ -41,7 +41,7 @@ export default function About() {
 						<h3 className="text-lg font-bold mb-2 ">
 							Freelance Web Developer 2019 - Present
 						</h3>
-						<ul className="">
+						<ul className="text-xs">
 							<li className="mb-2">
 								Developed and maintained responsive landing
 								pages using React and Tailwind with Stripe and
@@ -72,7 +72,7 @@ export default function About() {
 						<h3 className="text-lg font-bold mb-2">
 							QA Engineer at McAfee 2018 - 2019
 						</h3>
-						<ul className="">
+						<ul className="text-xs">
 							<li className="mb-2">
 								Developed and maintained automation library
 								using Selenium in C# for mobile and web

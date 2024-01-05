@@ -20,7 +20,7 @@ export default function Project({
 					key={title}
 					width={400}
 					height={300}
-					className="rounded-lg w-full lg:rounded-none lg:rounded-l-lg"
+					className="rounded-lg w-full xl:rounded-none xl:rounded-l-lg"
 				/>
 				<Image
 					src={images[1].url}
@@ -31,8 +31,8 @@ export default function Project({
 					className="rounded-r-lg w-full hidden xl:block"
 				/>
 			</div>
-			<h3 className="text-xl font-bold mb-2">{title}</h3>
-			<p className="text-sm">{children}</p>
+			<h3 className="text-lg font-bold mb-2">{title}</h3>
+			<p className="text-xs">{children}</p>
 			<div className="flex flex-wrap items-center justify-center mt-2">
 				{tech.map((tech) => (
 					<a

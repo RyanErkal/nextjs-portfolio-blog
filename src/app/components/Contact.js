@@ -65,7 +65,7 @@ export default function Contact() {
 					<GradientTitle>Contact</GradientTitle>
 					<form
 						ref={form}
-						className="flex flex-col justify-center items-center text-center w-full px-6 text-sm"
+						className="flex flex-col justify-center items-center text-center w-full px-6 text-xs"
 						onSubmit={handleSubmit}>
 						<input
 							type="text"

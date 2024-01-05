@@ -5,7 +5,7 @@ export default function Footer() {
 		<footer className="bg-slate-900 bottom-0">
 			<div className="mx-auto w-full max-w-screen-xl p-4 py-6">
 				<div className="">
-					<span className="text-sm text-slate-300">
+					<span className="text-xs text-slate-300">
 						©2023 Ryan Erkal
 					</span>
 					<div className="flex mt-4 space-x-5">
