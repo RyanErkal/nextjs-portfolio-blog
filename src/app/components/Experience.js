@@ -46,8 +46,8 @@ export default function About() {
 								Designed, developed and maintained responsive
 								web apps for clients using Next.js and Tailwind
 								CSS. Hosted on Vercel / Netlify. Projects
-								consisted of but not limited to e-commerece,
-								subscripton based education sites and landing
+								consisted of but not limited to e-commerce,
+								subscription based education sites and landing
 								pages.
 							</li>
 							<li className="mb-2">
