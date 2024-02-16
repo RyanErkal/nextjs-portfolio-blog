@@ -43,29 +43,30 @@ export default function About() {
 						</h3>
 						<ul className="text-xs">
 							<li className="mb-2">
-								Developed and maintained responsive landing
-								pages using React and Tailwind with Stripe and
-								Calendly integration, resulting in an increase
-								in lead generation and conversion rate by up to
-								30% and 50% respectively.
+								Designed, developed and maintained responsive
+								web apps for clients using Next.js and Tailwind
+								CSS. Hosted on vercel / netlify. Projects
+								consisted of but not limited to eCommerece,
+								subscripton based education sites and landing
+								pages.
 							</li>
 							<li className="mb-2">
-								Utilized Wordpress and Shopify to allow clients
-								to upsell their customers using popular SEO
-								optimization tools and conventions.
+								Utilized AWS (S3 and Cloudfront) for image and
+								asset hosting and Supabase / Firebase for
+								database and authentication.
 							</li>
 							<li className="mb-2">
-								Emphasized a client-centric approach in website
-								adjustments, employing CI/CD methodologies to
-								streamline the deployment of visual and
-								structural enhancements based on client
-								feedback.
+								Employed extensive perfromance and SEO
+								optimizations for all projects. Achieving a
+								Lighthouse SEO, Accesability and Best Practices
+								score of 90+ for all production deployment.
 							</li>
 							<li className="mb-2">
-								Exercised strong communication and problem
-								solving skills, ability to convey ideas and
-								instructions to a variety of personality types
-								in both a 1-1 and team setting.
+								Developed excellent communication and project
+								management skills. Working with clients to
+								understand their needs and deliver a product
+								that meets their expectations in a timely
+								fashion.
 							</li>
 						</ul>
 						<br />
