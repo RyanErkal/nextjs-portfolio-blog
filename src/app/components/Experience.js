@@ -39,7 +39,7 @@ export default function About() {
 					<GradientTitle>Experience</GradientTitle>
 					<div className="text-xs xl:text-sm">
 						<h3 className="text-lg font-bold mb-2 ">
-							Freelance Web Developer 2019 - Present
+							Freelance Web Developer 2021 - Present
 						</h3>
 						<ul className="text-xs">
 							<li className="mb-2">
@@ -51,13 +51,13 @@ export default function About() {
 								pages.
 							</li>
 							<li className="mb-2">
-								Utilized AWS (S3 and Cloudfront) for image and
+								Utilized AWS ( S3 and Cloudfront ) for image and
 								asset hosting, Supabase / Firebase for database
 								and authentication, Stripe for payment /
 								subscription processing and Contentful CMS.
 							</li>
 							<li className="mb-2">
-								Employed extensive perfromance and SEO
+								Employed extensive performance and SEO
 								optimizations for all projects. Achieving a
 								Lighthouse SEO, Accesability and Best Practices
 								score of 90+ for all production deployments.
