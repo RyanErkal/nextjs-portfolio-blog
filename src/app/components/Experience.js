@@ -45,21 +45,22 @@ export default function About() {
 							<li className="mb-2">
 								Designed, developed and maintained responsive
 								web apps for clients using Next.js and Tailwind
-								CSS. Hosted on vercel / netlify. Projects
-								consisted of but not limited to eCommerece,
+								CSS. Hosted on Vercel / Netlify. Projects
+								consisted of but not limited to e-commerece,
 								subscripton based education sites and landing
 								pages.
 							</li>
 							<li className="mb-2">
 								Utilized AWS (S3 and Cloudfront) for image and
-								asset hosting and Supabase / Firebase for
-								database and authentication.
+								asset hosting, Supabase / Firebase for database
+								and authentication, Stripe for payment /
+								subscription processing and Contentful CMS.
 							</li>
 							<li className="mb-2">
 								Employed extensive perfromance and SEO
 								optimizations for all projects. Achieving a
 								Lighthouse SEO, Accesability and Best Practices
-								score of 90+ for all production deployment.
+								score of 90+ for all production deployments.
 							</li>
 							<li className="mb-2">
 								Developed excellent communication and project
