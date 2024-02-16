@@ -59,7 +59,7 @@ export default function About() {
 							<li className="mb-2">
 								Employed extensive performance and SEO
 								optimizations for all projects. Achieving a
-								Lighthouse SEO, Accesability and Best Practices
+								Lighthouse SEO, Accessability and Best Practices
 								score of 90+ for all production deployments.
 							</li>
 							<li className="mb-2">
