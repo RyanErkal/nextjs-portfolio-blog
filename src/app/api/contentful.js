@@ -4,9 +4,9 @@ export async function getEntries() {
 	const contentful = require("contentful");
 
 	const client = contentful.createClient({
-		space: "651dpynyx4bt",
+		space: process.env.SPACE_ID,
 		environment: "master",
-		accessToken: "aMDd0h_eopxu33mCbUFzzC2WcLg9JKX9ZbzswND_5gc"
+		accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
 	});
 
 	return client
@@ -21,9 +21,9 @@ export async function getEntry(id) {
 	const contentful = require("contentful");
 
 	const client = contentful.createClient({
-		space: "651dpynyx4bt",
+		space: process.env.SPACE_ID,
 		environment: "master",
-		accessToken: "aMDd0h_eopxu33mCbUFzzC2WcLg9JKX9ZbzswND_5gc"
+		accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
 	});
 
 	return client
